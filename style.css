@@ -1,0 +1,76 @@
+  /* Corresponde al primer Break Point */
+  body {
+    background: CornflowerBlue;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  .content h2:before {
+    content: 'Soy XS 😊';
+  }
+  .content h3::before{
+    content: '1/5'
+  }
+
+  .square{
+    height: 30px;
+    width: 100%;
+    border: 1px solid blue;
+    background-color: red;
+    margin-top: 4px;
+  }
+
+  /*----------------------------*/
+
+  /*------------Mobile----------*/
+
+  @media (min-width: 576px) {
+    body {
+      background: RebeccaPurple;
+    }
+    .content h2:before {
+        content: 'Soy SM 😉';
+    }
+    .content h3::before{
+      content: '2/5'
+    }
+  }
+
+  /*------------Medio ViewPort----------*/
+  @media (min-width: 768px) {
+    body {
+     background: Crimson;
+    }
+    .content h2:before {
+      content: 'Soy MD 😙';
+    }
+    .content h3::before{
+      content: '3/5'
+    }
+  }
+
+  /*------------Escritorio ViewPort----------*/
+  @media (min-width: 992px) {
+    body {
+      background: Orange;
+    }
+    .content h2:before {
+      content: 'Soy LG 😜';
+    }
+    .content h3::before{
+      content: '4/5'
+    }
+  }
+
+  /*------------XL ViewPort----------*/ 
+
+  @media (min-width: 1200px) {
+    body {
+      background: Gold;
+    }
+    .content h2:before {
+      content: 'Soy XL 😂';
+    }
+    .content h3::before{
+      content: '5/5'
+    }
+  }
